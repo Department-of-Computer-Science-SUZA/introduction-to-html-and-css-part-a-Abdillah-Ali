@@ -116,6 +116,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
 }
 
 /* Useful Links Section */
@@ -132,4 +133,28 @@ img {
 
 #useful-links a:hover {
     color: #183B4E;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    form {
+        width: 95%;
+        padding: 10px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+    }
 }
