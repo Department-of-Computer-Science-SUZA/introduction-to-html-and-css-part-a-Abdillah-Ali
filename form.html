@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Form</title>
+</head>
+
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Basic Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Interests</legend>
+            <input type="checkbox" id="coding" name="interests" value="Coding">
+            <label for="coding">Coding</label><br>
+
+            <input type="checkbox" id="sports" name="interests" value="Sports">
+            <label for="sports">Sports</label><br>
+
+            <input type="checkbox" id="music" name="interests" value="Music">
+            <label for="music">Music</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Location</legend>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="tanzania">Tanzania</option>
+                <option value="kenya">Kenya</option>
+                <option value="uganda">Uganda</option>
+                <option value="rwanda">Rwanda</option>
+                <option value="burundi">Burundi</option>
+                <option value="south-sudan">South Sudan</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Profile Picture</legend>
+            <label for="profilePic">Upload Profile Picture:</label>
+            <input type="file" id="profilePic" name="profilePic" accept="image/*">
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+
+</html>
